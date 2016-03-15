@@ -17,28 +17,32 @@ namespace UntitledLOL
             set
             {
                 _cursorLocked = value;
-                if(OnCursorLockChange != null)
+                Debug.Log("Cursor is now " + (value ? "locked" : "unlocked"));
+                if (OnCursorLockChange != null)
                 {
                     OnCursorLockChange(value);
-                    Debug.Log("Cursor is now " + (value ? "locked" : "unlocked"));
                 }
             }
         }
 
         void Update()
         {
-            if(_cursorLocked)
+
+            if (cursorLocked)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-            }else
+            }
+            else
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
 
+            
+
             //TODO: temporal
-            if(Input.GetButtonDown("Menu"))
+            if (Input.GetButtonDown("Menu"))
             {
                 ToggleCursor();
             }

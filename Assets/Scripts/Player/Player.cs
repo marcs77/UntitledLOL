@@ -10,8 +10,30 @@ namespace UntitledLOL {
 
         GameObject cam;
         GameObject hands;
+        GameObject visor;
 
-		void Start () {
+        public override void OnStartLocalPlayer()
+        {
+            CursorHandler.cursorLocked = true;
+
+            cam = GameObject.Find("SceneCamera");
+            if (cam != null)
+            {
+                cam.SetActive(false);
+            }
+
+
+            hands = transform.FindChild("FPCamera").FindChild("Hands").gameObject;
+            if (hands != null)
+            {
+                int layer = LayerMask.NameToLayer("LocalWeapon");
+                hands.layer = layer;
+
+                Utils.SetLayerRecursively(hands, layer);
+            }
+        }
+
+        void Start () {
 
             if (!isLocalPlayer)
             {
@@ -19,27 +41,12 @@ namespace UntitledLOL {
                 {
                     b.enabled = false;
                 }
-            }
-            else
-            {
-                cam = GameObject.Find("SceneCamero");
-                if (cam != null)
+
+                visor = transform.FindChild("Visor").gameObject;
+                if(visor != null)
                 {
-                    cam.SetActive(false);
+                    visor.layer = LayerMask.NameToLayer("Default");
                 }
-                
-
-                hands = transform.FindChild("FPCamera").FindChild("Hands").gameObject;
-                if(hands != null)
-                {
-                    int layer = LayerMask.NameToLayer("LocalWeapon");
-                    hands.layer = layer;
-
-                    Utils.SetLayerRecursively(hands, layer);
-                }
-
-
-                
             }
             
         }

@@ -46,6 +46,22 @@ namespace UntitledLOL
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
+        void OnEnable()
+        {
+            CursorHandler.OnCursorLockChange += OnCursorLock;
+        }
+
+        void OnDisable()
+        {
+            CursorHandler.OnCursorLockChange -= OnCursorLock;
+        }
+
+        void OnCursorLock(bool f)
+        {
+            enableMovement = f;
+        }
+
         // Use this for initialization
         private void Start()
         {
