@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scene/MapOffline.unity
-  isLoaded: 1
-  isActive: 1
