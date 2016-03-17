@@ -44,6 +44,19 @@ namespace UntitledLOL
             }
         }
 
+        PlayerWeapon _weapon;
+        public PlayerWeapon weapon
+        {
+            get
+            {
+                if (_weapon == null)
+                {
+                    _weapon = GetComponent<PlayerWeapon>();
+                }
+                return _weapon;
+            }
+        }
+
 
 
     }
