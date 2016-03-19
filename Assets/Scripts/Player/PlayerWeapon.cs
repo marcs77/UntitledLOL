@@ -15,7 +15,7 @@ namespace UntitledLOL
         [SerializeField]
         float range = 100;
         [SerializeField]
-        float damage = 10;
+        int damage = 10;
 
         void Start()
         {
@@ -55,7 +55,12 @@ namespace UntitledLOL
                 if ((player = hit.transform.GetComponent<Player>()) != null)
                 {
                     Debug.Log("Hit " + hit.transform.name + " by " + damage);
-                    NetworkServer.Spawn((GameObject)Instantiate(explosion, hit.point, Quaternion.identity));
+                    GameObject exp = (GameObject)Instantiate(explosion, hit.point, Quaternion.identity);
+                    NetworkServer.Spawn(exp);
+                    Destroy(exp, 7);
+
+                    player.health.Damage(damage);
+
                 } else
                 {
                     Debug.Log("Missed " + hit.transform.name);

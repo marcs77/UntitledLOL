@@ -9,9 +9,21 @@ namespace UntitledLOL
     {
         public static GameManager instance;
 
+        public delegate void PlayerEvent(uint netID);
+        public static PlayerEvent OnPlayerDeath;
+        public static PlayerEvent OnPlayerConnected;
+
         void Awake()
         {
             instance = this;
+        }
+
+        public void CallOnPlayerDeath(uint netID)
+        {
+            if(OnPlayerDeath != null)
+            {
+                OnPlayerDeath(netID);
+            }
         }
 
         void Start()

@@ -6,6 +6,7 @@ namespace UntitledLOL
 {
     public abstract class PlayerBase : NetworkBehaviour
     {
+
         Player _player;
         public Player player
         {
@@ -44,6 +45,19 @@ namespace UntitledLOL
             }
         }
 
+        PlayerHealth _health;
+        public PlayerHealth health
+        {
+            get
+            {
+                if (_health == null)
+                {
+                    _health = GetComponent<PlayerHealth>();
+                }
+                return _health;
+            }
+        }
+
         PlayerWeapon _weapon;
         public PlayerWeapon weapon
         {
@@ -56,8 +70,6 @@ namespace UntitledLOL
                 return _weapon;
             }
         }
-
-
 
     }
 }

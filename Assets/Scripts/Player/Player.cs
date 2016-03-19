@@ -11,6 +11,7 @@ namespace UntitledLOL {
         GameObject cam;
         GameObject hands;
         GameObject visor;
+        GameObject healthBar;
 
         public override void OnStartLocalPlayer()
         {
@@ -22,6 +23,11 @@ namespace UntitledLOL {
                 cam.SetActive(false);
             }
 
+            healthBar = transform.FindChild("HealthBarCanvas").gameObject;
+            if(healthBar != null)
+            {
+                healthBar.SetActive(false);
+            }
 
             hands = transform.FindChild("FPCamera").FindChild("Hands").gameObject;
             if (hands != null)
@@ -31,6 +37,9 @@ namespace UntitledLOL {
 
                 Utils.SetLayerRecursively(hands, layer);
             }
+
+            GameObject.Find("GameDatabase").GetComponent<GameManagerDatabase>().SetLocalPlayer(this);
+            
         }
 
         void Start () {
