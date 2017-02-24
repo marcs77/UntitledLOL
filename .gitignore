@@ -1,0 +1,12 @@
+.DS_Store
+Build/
+Library/
+Temp/
+*.csproj
+*.pidb
+*.sln
+WebGLBuild/
+WebPlayerBuild/
+
+
+Assets/Scenes/**/LightingData.asset
