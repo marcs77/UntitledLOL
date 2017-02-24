@@ -17,7 +17,11 @@ namespace UntitledLOL
             set
             {
                 _cursorLocked = value;
+<<<<<<< HEAD
                 Debug.Log("Cursor is now " + (value ? "locked" : "unlocked"));
+=======
+                //Debug.Log("Cursor is now " + (value ? "locked" : "unlocked"));
+>>>>>>> test
                 if (OnCursorLockChange != null)
                 {
                     OnCursorLockChange(value);

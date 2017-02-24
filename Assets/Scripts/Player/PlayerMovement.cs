@@ -24,6 +24,10 @@ namespace UntitledLOL
         [SerializeField] private MouseLook m_MouseLook;
         [SerializeField] private bool m_UseFovKick = true;
         [SerializeField] private FOVKick m_FovKick = new FOVKick();
+<<<<<<< HEAD
+=======
+        [SerializeField] private Camera m_HandsCamera;
+>>>>>>> test
         [SerializeField] private bool m_UseHeadBob = true;
         [SerializeField] private CurveControlledBob m_HeadBob = new CurveControlledBob();
         [SerializeField] private LerpControlledBob m_JumpBob = new LerpControlledBob();
@@ -105,6 +109,14 @@ namespace UntitledLOL
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+<<<<<<< HEAD
+=======
+
+            if(m_HandsCamera) {
+                m_HandsCamera.fieldOfView = m_Camera.fieldOfView;
+            }
+
+>>>>>>> test
         }
 
 

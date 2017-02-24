@@ -36,7 +36,11 @@ namespace UnityStandardAssets.Utility
             {
                 yield return null;
             }
+<<<<<<< HEAD
             Debug.Log("stopping " + name);
+=======
+            //Debug.Log("stopping " + name);
+>>>>>>> test
 
             // turn off emission
             foreach (var system in systems)

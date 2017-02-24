@@ -7,6 +7,7 @@ namespace UntitledLOL
     public abstract class PlayerBase : NetworkBehaviour
     {
 
+<<<<<<< HEAD
         Player _player;
         public Player player
         {
@@ -14,6 +15,18 @@ namespace UntitledLOL
                 if(_player == null)
                 {
                     _player = GetComponent<Player>();
+=======
+        
+
+        Player _player;
+        public Player player
+        {
+            get
+            {
+                if (_player == null)
+                {
+                    _player = GetComponentInParent<Player>();
+>>>>>>> test
                 }
                 return _player;
             }
@@ -26,7 +39,11 @@ namespace UntitledLOL
             {
                 if (_identity == null)
                 {
+<<<<<<< HEAD
                     _identity = GetComponent<PlayerIdentity>();
+=======
+                    _identity = GetComponentInParent<PlayerIdentity>();
+>>>>>>> test
                 }
                 return _identity;
             }
@@ -39,7 +56,11 @@ namespace UntitledLOL
             {
                 if (_movement == null)
                 {
+<<<<<<< HEAD
                     _movement = GetComponent<PlayerMovement>();
+=======
+                    _movement = GetComponentInParent<PlayerMovement>();
+>>>>>>> test
                 }
                 return _movement;
             }
@@ -52,7 +73,11 @@ namespace UntitledLOL
             {
                 if (_health == null)
                 {
+<<<<<<< HEAD
                     _health = GetComponent<PlayerHealth>();
+=======
+                    _health = GetComponentInParent<PlayerHealth>();
+>>>>>>> test
                 }
                 return _health;
             }
@@ -65,11 +90,25 @@ namespace UntitledLOL
             {
                 if (_weapon == null)
                 {
+<<<<<<< HEAD
                     _weapon = GetComponent<PlayerWeapon>();
+=======
+                    _weapon = GetComponentInParent<PlayerWeapon>();
+>>>>>>> test
                 }
                 return _weapon;
             }
         }
 
+<<<<<<< HEAD
     }
+=======
+        public bool IsLocalPlayer()
+        {
+            return isLocalPlayer;
+        }
+        
+    }
+
+>>>>>>> test
 }

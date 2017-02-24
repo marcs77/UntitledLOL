@@ -2,7 +2,11 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
+<<<<<<< HEAD
   serializedVersion: 5
+=======
+  serializedVersion: 6
+>>>>>>> test
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -12,6 +16,10 @@ Material:
     _UVSEC_UV1
   m_LightmapFlags: 0
   m_CustomRenderQueue: -1
+<<<<<<< HEAD
+=======
+  stringTagMap: {}
+>>>>>>> test
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -95,6 +103,17 @@ Material:
     m_Floats:
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+>>>>>>> test
           name: _Cutoff
         second: .5
       data:
@@ -103,6 +122,7 @@ Material:
         second: .5
       data:
         first:
+<<<<<<< HEAD
           name: _SrcBlend
         second: 1
       data:
@@ -115,6 +135,16 @@ Material:
         second: .0199999996
       data:
         first:
+=======
+          name: _Parallax
+        second: .0199999996
+      data:
+        first:
+          name: _Lightmapping
+        second: 0
+      data:
+        first:
+>>>>>>> test
           name: _ZWrite
         second: 1
       data:
@@ -139,10 +169,13 @@ Material:
         second: 0
       data:
         first:
+<<<<<<< HEAD
           name: _EmissionScaleUI
         second: 1
       data:
         first:
+=======
+>>>>>>> test
           name: _Mode
         second: 0
       data:
@@ -151,8 +184,13 @@ Material:
         second: 0
       data:
         first:
+<<<<<<< HEAD
           name: _Lightmapping
         second: 0
+=======
+          name: _EmissionScaleUI
+        second: 1
+>>>>>>> test
       data:
         first:
           name: _EmissionScale
@@ -184,13 +222,23 @@ Material:
         second: {r: .551470578, g: .551470578, b: .551470578, a: 1}
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _SpecularColor
+        second: {r: .0588235259, g: .0588235259, b: .0588235259, a: 1}
+      data:
+        first:
+>>>>>>> test
           name: _EmissionColorUI
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _EmissionColorWithMapUI
         second: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
       data:
         first:
           name: _SpecularColor
         second: {r: .0588235259, g: .0588235259, b: .0588235259, a: 1}
+=======
+>>>>>>> test

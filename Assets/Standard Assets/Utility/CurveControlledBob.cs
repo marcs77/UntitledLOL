@@ -14,8 +14,13 @@ namespace UnityStandardAssets.Utility
                                                             new Keyframe(2f, 0f)); // sin curve for head bob
         public float VerticaltoHorizontalRatio = 1f;
 
+<<<<<<< HEAD
         private float m_CyclePositionX;
         private float m_CyclePositionY;
+=======
+        private float m_CyclePositionX = 0f;
+        private float m_CyclePositionY = 0f;
+>>>>>>> test
         private float m_BobBaseInterval;
         private Vector3 m_OriginalCameraPosition;
         private float m_Time;

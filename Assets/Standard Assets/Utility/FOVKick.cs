@@ -12,7 +12,11 @@ namespace UnityStandardAssets.Utility
         public float FOVIncrease = 3f;                  // the amount the field of view increases when going into a run
         public float TimeToIncrease = 1f;               // the amount of time the field of view will increase over
         public float TimeToDecrease = 1f;               // the amount of time the field of view will take to return to its original size
+<<<<<<< HEAD
         public AnimationCurve IncreaseCurve;
+=======
+        public AnimationCurve IncreaseCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+>>>>>>> test
 
 
         public void Setup(Camera camera)

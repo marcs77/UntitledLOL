@@ -7,7 +7,13 @@ Temp/
 *.sln
 WebGLBuild/
 WebPlayerBuild/
+<<<<<<< HEAD
 Assets/Scenes/Menu/LightingData.asset
 Assets/Scenes/Menu/LightingData.asset.meta
 Assets/Scenes/Menu/ReflectionProbe-0.exr
 Assets/Scenes/Menu/ReflectionProbe-0.exr.meta
+=======
+
+
+Assets/Scenes/**/LightingData.asset
+>>>>>>> test

@@ -2,14 +2,24 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
+<<<<<<< HEAD
   serializedVersion: 4
+=======
+  serializedVersion: 6
+>>>>>>> test
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: NavySmooth
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _LIGHTMAPPING_DYNAMIC_LIGHTMAPS _LIGHTMAPPING_REALTIME _UVSEC_UV1
+<<<<<<< HEAD
   m_CustomRenderQueue: -1
+=======
+  m_LightmapFlags: 4
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+>>>>>>> test
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -36,21 +46,33 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
           name: _EmissionMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
+=======
           name: _ParallaxMap
+>>>>>>> test
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
+          name: _ParallaxMap
+=======
+          name: _OcclusionMap
+>>>>>>> test
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
           name: _SpecGlossMap
+=======
+          name: _EmissionMap
+>>>>>>> test
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -78,14 +100,22 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
           name: _OcclusionMap
+=======
+          name: _MetallicGlossMap
+>>>>>>> test
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
           name: _MetallicGlossMap
+=======
+          name: _SpecGlossMap
+>>>>>>> test
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -93,6 +123,7 @@ Material:
     m_Floats:
       data:
         first:
+<<<<<<< HEAD
           name: _AlphaTestRef
         second: .5
       data:
@@ -101,6 +132,8 @@ Material:
         second: 1
       data:
         first:
+=======
+>>>>>>> test
           name: _SrcBlend
         second: 1
       data:
@@ -109,6 +142,17 @@ Material:
         second: 0
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _AlphaTestRef
+        second: .5
+      data:
+        first:
+>>>>>>> test
           name: _Parallax
         second: .0199999996
       data:
@@ -141,12 +185,25 @@ Material:
         second: 0
       data:
         first:
+<<<<<<< HEAD
           name: _EmissionScaleUI
         second: 0
       data:
         first:
           name: _Metallic
         second: .100000001
+=======
+          name: _Metallic
+        second: .100000001
+      data:
+        first:
+          name: _Lightmapping
+        second: 1
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 0
+>>>>>>> test
     m_Colors:
       data:
         first:
@@ -158,6 +215,13 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _SpecColor
+        second: {r: .117647059, g: .117647059, b: .117647059, a: 1}
+      data:
+        first:
+>>>>>>> test
           name: _SpecularColor
         second: {r: .156862751, g: .156862751, b: .156862751, a: 1}
       data:
@@ -168,7 +232,10 @@ Material:
         first:
           name: _EmissionColorWithMapUI
         second: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
       data:
         first:
           name: _SpecColor
         second: {r: .117647059, g: .117647059, b: .117647059, a: 1}
+=======
+>>>>>>> test
